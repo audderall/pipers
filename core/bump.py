@@ -8,5 +8,4 @@ async def bump(bot, channel_id, application_id):
         if cmd.application_id == int(application_id):
             await cmd()
             return channel_id
-        return False
     raise ValueError(f"application {application_id} not found in channel {channel_id}")
